@@ -10,8 +10,9 @@ window.onload = function() {
             const jsonStr = JSON.stringify(r.response);
             const obj = JSON.parse(jsonStr);
             var time = document.getElementById("time");
-            time.innerHTML = obj["unixtime"]*1000;
-            
+            var date = new Date(obj["unixtime"] * 1000);//付け足したやつなので変になったら消しておいてください
+            //time.innerHTML = obj["unixtime"]*;
+            time.innerHTML= date
         }
     }
 }
