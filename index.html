@@ -8,9 +8,8 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <h1>time</h1>
+   <h1>NFTime</h1>
    
-                <h1>time</h1>
                 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
                 <script type="text/javascript" src="time.js"></script>
 
@@ -23,5 +22,12 @@
         <button onclick="onInit()">WalletConnect</button>
       </div>
    <script src="script.js"></script>
+   <body onload="loadImage('preview');">
+<p><canvas id="preview"></canvas></p>
+<p>
+<input type="text" id="canvas_text" value="我輩は犬である">
+<button onclick="drawText('preview', 'canvas_text');">文字を描く</button>
+</p>
+      <script src="canvastext.js"></script>
 </body>
 </html>
